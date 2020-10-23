@@ -52,7 +52,7 @@ int main()
     }
   }
   if (c == n)
-    printf("%d isn't present in the array.\n", search);
+    printf("%d is not present in the array.\n", search);
 
   return 0;
 }
