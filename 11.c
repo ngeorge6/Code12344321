@@ -11,7 +11,7 @@ int main()
   for (c = 0; c < n; c++)
     scanf("%d", &array[c]);
 
-  printf("Enter a number to search\n");
+  printf("Enter a number to search: \n");
   scanf("%d", &search);
 
   for (c = 0; c < n; c++)
