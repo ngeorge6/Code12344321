@@ -1,14 +1,16 @@
 #include <stdio.h>
 int main() {
-    double a, b, product;
-    printf("Enter two numbers: ");
-    scanf("%lf %lf", &a, &b);  
- 
-    // Calculating product
-    product = a * b;
+    int a;
+    long b;   // equivalent to long int b;
+    long long c;  // equivalent to long long int c;
+    double e;
+    long double f;
 
-    // %.2lf displays number up to 2 decimal point
-    printf("Product = %.2lf", product);
+    printf("Size of int = %zu bytes \n", sizeof(a));
+    printf("Size of long int = %zu bytes\n", sizeof(b));
+    printf("Size of long long int = %zu bytes\n", sizeof(c));
+    printf("Size of double = %zu bytes\n", sizeof(e));
+    printf("Size of long double = %zu bytes\n", sizeof(f));
     
     return 0;
 }
