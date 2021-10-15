@@ -1,16 +1,14 @@
 #include <stdio.h>
 int main() {
-    int a;
-    long b;   // equivalent to long int b;
-    long long c;  // equivalent to long long int c;
-    double e;
-    long double f;
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
 
-    printf("Size of int = %zu bytes \n", sizeof(a));
-    printf("Size of long int = %zu bytes\n", sizeof(b));
-    printf("Size of long long int = %zu bytes\n", sizeof(c));
-    printf("Size of double = %zu bytes\n", sizeof(e));
-    printf("Size of long double = %zu bytes\n", sizeof(f));
+    // true if num is perfectly divisible by 2
+    if(num % 2 == 0)
+        printf("%d is even.", num);
+    else
+        printf("%d is odd.", num);
     
     return 0;
 }
